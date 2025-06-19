@@ -1,10 +1,17 @@
 import 'package:equatable/equatable.dart';
 
-abstract class Recipeevent extends Equatable{
+abstract class Recipeevent{
 
   Recipeevent();
-  List<Object?> get props => [];
+
 }
-class getrecipes extends Recipeevent{}
+class getrecipes extends Recipeevent{
+}
+class searchrecipes extends Recipeevent{
+  String query;
+  searchrecipes({
+    required this.query,
+});
+}
 
 
